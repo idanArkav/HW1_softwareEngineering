@@ -1,6 +1,5 @@
 import java.util.Arrays;
 public class Board {
-   private static final int EMPTY=0;
  Tile[][] tiles;
 
 public Board (String tileString) {
@@ -16,7 +15,7 @@ public Board (String tileString) {
         for (int j = 0; j < colNum; j++) {
             String cell = cells[j];
             if (cell.equals("_")) {
-                tiles[i][j] = EMPTY;
+                tiles[i][j] = new Tile(0);//Empty cell ("_") will be repalced by ( 0 )
             } else {
                 int value = Integer.parseInt(cell);
                 tiles[i][j] = new Tile(value);
