@@ -1,6 +1,6 @@
 import java.util.Arrays;
 public class Board {
- Tile[][] tiles;
+private Tile[][] tiles;
 
 public Board (String tileString) {
     String[] rows = tileString.split("|");
