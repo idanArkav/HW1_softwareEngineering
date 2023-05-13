@@ -1,10 +1,10 @@
 import java.util.Arrays;
 public class Board {
-    private static final int EMPTY=-1;
-Tile[][] tiles;
+   private static final int EMPTY=0;
+ Tile[][] tiles;
 
 public Board (String tileString) {
-    String[] rows = tileString.split("\\|");
+    String[] rows = tileString.split("|");
     int rowsNum = rows.length;
     int colNum = rows[0].split(" ").length;
     String[][] intialBoard = new String[rowsNum][colNum];
